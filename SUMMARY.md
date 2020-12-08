@@ -5,7 +5,7 @@
 ## Arrow Function
 
 * [Normal function vs Arrow Function](arrow-function/normal-function-vs-arrow-function.md)
-* [Class 안에서 작동이 다르다?](arrow-function/class.md)
+* [Class에서 사용하지마!!!](arrow-function/class.md)
 
 ## Closure
 
