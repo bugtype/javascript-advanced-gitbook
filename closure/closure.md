@@ -17,7 +17,7 @@
 조금은 와닿는가?? 한번 아래 예제 코드를 보고 한번 이해해보자.
 
 ```typescript
-functiton Outer(){
+function Outer(){
     const str = 'hello'
     function Inner(){
         console.log(str)
