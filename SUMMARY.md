@@ -12,3 +12,8 @@
 * [Closure](closure/closure.md)
 * [Memory Leak](closure/memory-leak.md)
 
+## Hidden Class
+
+* [Hidden Class](hidden-class/hidden-class.md)
+* [Inline Cache](hidden-class/inline-cache.md)
+
