@@ -17,3 +17,7 @@
 * [Hidden Class](hidden-class/hidden-class.md)
 * [Inline Cache](hidden-class/inline-cache.md)
 
+## setTimeout <a id="settimeout-1"></a>
+
+* [setTimeout](settimeout-1/settimeout.md)
+
