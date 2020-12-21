@@ -1,5 +1,5 @@
 ---
-description: 함수 vs 화살표 함수
+description: 일반 함수 vs 화살표 함수
 ---
 
 # Normal function vs Arrow Function
@@ -33,13 +33,13 @@ class App extends Component<AppProps, AppState> {
 }
 ```
 
-리액트에서 클래스형 컴포넌트로 구현할 때, 우리는 메소드에 bind를 항상 시켜줘야 했다.
+리액트에서 **클래스형 컴포넌트**로 구현할 때, 우리는 메소드에 bind를 항상 해줘야 했다.
 
 ```typescript
 this.hello = this.hello.bind(this);
 ```
 
-위 처럼 bind를 해주지 않으면, 정상적으로 this가 class의 인스턴스를 가르키고 있지 않아. 원하는 결과를 받을 수 없게 된다.
+만약 위 처럼 bind를 해주지 않으면, 정상적으로 **this가 class의 인스턴스**를 가르키고 있지 않아. 원하는 결과를 받을 수 없게 된다. \(참고로 this는 mutable이다.\)
 
 ```text
 Cannot read property 'state' of undefined
