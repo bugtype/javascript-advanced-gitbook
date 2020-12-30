@@ -33,7 +33,15 @@ Outer() // hello
 
 #### Next\) Closure는 Memory Leak을 발생시킨다 ?!
 
-내부함수가 외부변수를 잡고 있기 때문에 GC가 해당 변수를 처리하지 못한다. Javascript에서는 해당 문법이 없다. \( Swift에서는 `weak self`를 사용을 해서 작업을 했었다.\) 그러면 Javascript GC에서 어떻게 메모리를 잡고 있는지. 어떻게 해결해야 하는지 다음편에서 보도록 하자.!
+내부함수가 외부변수를 잡고 있기 때문에 GC가 해당 변수를 처리하지 못한다. ~~Javascript에서는 해당 문법이 없다~~. \( Swift에서는 `weak self`를 사용을 해서 작업을 했었다.\) 그러면 Javascript GC에서 어떻게 메모리를 잡고 있는지. 어떻게 해결해야 하는지 다음편에서 보도록 하자.!
+
+**다시 찾아보니 javascript에도 weak ref가 있긴하다. 다만 IE, safari에서 지원하지 않는다..**
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/WeakRef](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef)
+
+
+
+
 
 **참고**
 
