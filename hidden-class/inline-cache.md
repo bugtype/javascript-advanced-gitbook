@@ -38,3 +38,13 @@ test()
 
 그림에서 보는 거와 같이 **23퍼**나 느리다
 
+---
+
+polymorphic
+
+#### Megamorphic <a id="polymorphic-and-megamorphic-in-action"></a>
+
+
+
+[http://www.egocube.pe.kr/lecture/content/html-javascript/202003240001](http://www.egocube.pe.kr/lecture/content/html-javascript/202003240001)
+
