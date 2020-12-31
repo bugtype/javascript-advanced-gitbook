@@ -40,9 +40,16 @@ test()
 
 ---
 
-polymorphic
 
-#### Megamorphic <a id="polymorphic-and-megamorphic-in-action"></a>
+
+인라인 캐싱의 상태
+
+* UNINITIALIZED\(0\)
+* PREMONOMORPHIC\(1\) - 1번째 접근
+* MONOMORPHIC\(1\) - 2번째 접근
+* **3번째 접근 \(cache hit\)**
+* POLYMORPHIC\(P\) - 다른 Shape\(Hidden Class\)가 접근할 경우. 4개까지 가능.
+* MEGAMORPHIC\(N\) - 최대 4개 캐시 가능.
 
 
 
