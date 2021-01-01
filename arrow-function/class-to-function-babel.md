@@ -26,7 +26,11 @@ var A = /** @class */ (function () {
 
 
 
+class를 function으로 변환하면, method는 prototype에 선언된다.
 
+하지만 arrow function은 보는 거와 같이 A 인스턴스에 선언 된다.
+
+A 인스턴스를 100개 만든다면, prototype\(hidden class, shape\)가 공유되므로, 메모리를 새로 할당하지 않는다. 하지만 arrow function은 새로 할당하게 된다.
 
 
 
