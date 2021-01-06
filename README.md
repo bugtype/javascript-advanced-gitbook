@@ -20,7 +20,7 @@ const hello2 = (message) => console.log(message)
 ```
 
 {% hint style="warning" %}
-ES6문법부터는 Case 2 로 많이 사용할 것이다. 하지만, 단순하게 편리하다고 생각하면 안된다. 특정조건에서는 Case 2는 성능저하를 발생시킨다.
+ES6문법부터는 Arrow Function인 Case 2 로 많이 사용할 것이다. 하지만, 단순하게 편리하다고 생각하면 안된다. 특정조건에서는 Arrow Function은 성능저하를 발생시킨다.
 {% endhint %}
 
 
