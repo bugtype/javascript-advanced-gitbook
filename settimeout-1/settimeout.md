@@ -16,6 +16,8 @@
 
 
 
+간단한 sleep 코드
+
 ```javascript
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
 ```
