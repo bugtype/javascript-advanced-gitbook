@@ -15,7 +15,7 @@ description: 'http://bugtype-kr.gitbook.io/javascript-advanced'
 // Case1
 const hello = function(message) { console.log(message)}
 
-// Case 2 ( class에서는 사용을 안해야 한다. )
+// Case 2 ( class에서는 성능 이슈가 있다. )
 const hello2 = (message) => console.log(message)
 ```
 
