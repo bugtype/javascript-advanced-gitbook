@@ -29,3 +29,7 @@
 * [내부 동작 원리](nodejs/undefined.md)
 * [Crypto](nodejs/crypto.md)
 
+## Thinking
+
+* [요청이 무한대로 들어오면 어떻게 될까?](thinking/undefined.md)
+
