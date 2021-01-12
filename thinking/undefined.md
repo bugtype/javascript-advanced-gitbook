@@ -44,7 +44,7 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
 
 에러를 확인해보니 힙이 할당할 수 있는 영역이 넘었기 때문에 안된다.
 
-* 추가적으로 관련자료를 찾아보니, Event loop안에는 6개의 queue가 있는 것은 위에서 설명하였다. 해당 queue는 동적으로 늘어난다고 한다. heap 사이즈 만큼.
+* 추가적으로 관련자료를 찾아보니, Event loop안에는 6개의 queue가 있는 것을 [**이전 챕터에서**](../nodejs/undefined.md) 설명하였다. 해당 queue는 동적으로 늘어난다고 한다. heap 사이즈 만큼.
 
 
 
