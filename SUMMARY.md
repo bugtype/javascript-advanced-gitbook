@@ -2,6 +2,11 @@
 
 * [Javascript 고급](README.md)
 
+## 3\) Hidden Class <a id="hidden-class"></a>
+
+* [Hidden Class](hidden-class/hidden-class.md)
+* [Inline Cache](hidden-class/inline-cache.md)
+
 ## 1\) Closure <a id="closure"></a>
 
 * [Closure](closure/closure.md)
@@ -13,11 +18,6 @@
 * [Normal function vs Arrow Function](arrow-function/normal-function-vs-arrow-function.md)
 * [Class에서 사용하지마!!!](arrow-function/class.md)
 * [그 외](arrow-function/undefined.md)
-
-## 3\) Hidden Class <a id="hidden-class"></a>
-
-* [Hidden Class](hidden-class/hidden-class.md)
-* [Inline Cache](hidden-class/inline-cache.md)
 
 ## 4\) setTimeout <a id="settimeout-1"></a>
 
