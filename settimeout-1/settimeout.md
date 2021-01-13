@@ -24,6 +24,35 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
 
 
 
+분산 작업하기. 대충 만들었는데 의외로 잘된다.
+
+```javascript
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+
+// dealy 10ms
+// start 시작 0
+// end 끝 1000
+// n n개씩 처리하기
+// callback : (index) => void
+async function divideProcess(delay,start,end,n,callback){
+
+    let i = start;
+    while(i<end+1){
+        for(let k = 0; k < n+1;k++){
+          if(i>=end+1) break;
+          callback(i++);
+        }
+        await sleep(delay)
+    }
+}
+divideProcess(100,50,100,4,console.log)
+
+let i = 0;
+while(i<10000){
+    console.log(i++)
+}
+```
+
 
 
 
