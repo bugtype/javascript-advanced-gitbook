@@ -1,6 +1,6 @@
 # 요청이 무한대로 들어오면 어떻게 될까?
 
-
+요청이 계속 들어오면 어떻게 되는지,  테스트 해보았다. 당연히 에러가 나는 것을 알았는데 어떤 에러인지는 추측이 안되었다.
 
 ```text
 <--- Last few GCs --->
@@ -36,15 +36,15 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
 13: 0x10097cc39 Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]
 ```
 
-무한히 늘려서 테스트 해보았다. 당연히  에러가 나는 것을 알았는데 어떤 에러인지는 추측이 안되었다.
+실험 결과, 위와 같은 에러가 발생한다. 
 
 ```text
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ```
 
-에러를 확인해보니 힙이 할당할 수 있는 영역이 넘었기 때문에 안된다.
+heap이 할당할 수 있는 영역이 넘었기 때문에 안된다는 에러이다. `StackGuard 라는 것이 있구나`
 
-* 추가적으로 관련자료를 찾아보니, Event loop안에는 6개의 queue가 있는 것을 [**이전 챕터에서**](../nodejs/undefined.md) 설명하였다. 해당 queue는 동적으로 늘어난다고 한다. heap 사이즈 만큼.
+* 추가적으로 관련자료를 찾아보니, Event loop안에는 6개의 queue가 있는 것을 [**이전 챕터에서**](../nodejs/undefined.md) 설명하였다. 해당 queue는 동적으로 늘어나는데... 이게 최대치를 초과해서 그런거 같다.
 
 
 
