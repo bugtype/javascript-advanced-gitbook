@@ -16,6 +16,7 @@
 
 ## 3\) Hidden Class <a id="hidden-class"></a>
 
+* [Prototype Chainning](hidden-class/prototype-chainning.md)
 * [Hidden Class](hidden-class/hidden-class.md)
 * [Inline Cache](hidden-class/inline-cache.md)
 
